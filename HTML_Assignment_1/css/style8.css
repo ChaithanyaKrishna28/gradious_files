@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 255, 227);
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+    background-color: red;
+    color: yellow;
+    border-radius:20%;
+
+}

@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+body{
+    background-color: rgb(177, 173, 230);
+    margin: 0;
+    padding: 0;
+}
+
+.para1{
+    color: red;
+    text-align: left;
+}
+
+.para2{
+    color: blue;
+    text-align: right;
+}
+.para3{
+    color: red;
+    text-align: center;
+}

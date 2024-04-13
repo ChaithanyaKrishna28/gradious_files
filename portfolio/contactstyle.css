@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.0rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    height: 100%;
+}
+
+header{
+    position: fixed;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F55533;
+}
+.logo{
+    height: 100%;
+}
+
+.logo a img{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #F55533;
+    margin-top: 7%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    width: 15%;
+    height: 100%;
+    background-color: #F55533;
+    position: relative;
+    margin-left: 0%;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+    transition: all 0.5s ease;
+    font-size: 2rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+
+}
+
+
+.profilephoto{
+    width: 40%;
+    height: 100%;
+}
+.profilephoto img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30%;
+}
+
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  border-bottom-right-radius:30% ;
+  background-color: wheat;
+}
+
+.contactoptions{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.phone{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.phonelogo{
+    width: 20%;
+  height: 100%;
+  border-radius: 5%;
+
+  background-color: #f55533;
+  padding: 4px;
+}
+
+
+.phonelogo svg{
+  border-radius: 5%;
+    border: 2px solid black;
+    box-shadow: 3px 4px 6px black;
+}
+.phonelogo svg:hover{
+    scale:  1.1;
+    transition: .7s,step-end;
+    
+    box-shadow: 1px 5px 6px black;
+}
+.phonelogo svg{
+    width: 100%;
+    height: 100%;
+}
+#phone svg{
+    padding: 5px;
+}
+.phonenumber{
+    width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.phonenumber a{
+    font-size: 1.7rem;
+  color: #f55533;
+  text-decoration: none;
+  text-shadow: 2px 1px 1px black;
+  margin-left: 10%;
+}
+
+
+
+/* .name,.desctext{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    flex-wrap: wrap;
+
+}
+
+.name h1{
+    font-size: 1.75rem;
+}
+#name{
+    color: #F55533;
+    font-size: 2.5rem;
+    text-shadow: 3px 0px 1px black;
+}
+
+.desctext p{
+    font-size: 1.5rem;
+} */
+
+footer{
+    position: absolute;
+  width: 100%;
+  height: 16%;
+  /*  */
+  background-color: #f55533;
+  margin-top: 40%;
+  padding: 7px;
+}
+
+.logos{
+    height: 50%;
+    /*  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo1{
+    width: auto;
+    height: 80%;
+    border-radius: 20%;
+    border: 2px solid black;
+    box-shadow: 1px 3px 0px black;
+    background-color: #f55533;
+    padding: 5px;
+    margin: 8px;
+}
+
+.logo1:hover{
+    scale:  1.1;
+    transition: .7s,step-end;
+    
+    box-shadow: 1px 5px 6px black;
+}
+.logo1 a svg{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}

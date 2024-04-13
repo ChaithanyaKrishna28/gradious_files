@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 255, 227);
+}
+
+p{
+    color: green;
+    font-weight: bold;
+}
+h1{
+    color: rgb(23, 114, 166);
+}
+h2{
+    color: green;
+}
+h3{
+    color: blueviolet;
+}
+h4{
+    color: rgb(9, 210, 9);
+}
+h5{
+    color: red;
+}
+h6{
+    color: yellowgreen;
+}

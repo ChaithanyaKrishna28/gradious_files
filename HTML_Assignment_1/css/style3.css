@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+#para1{
+    text-align: right;
+}
+#para2{
+    text-align: justify;
+}
+#para3{
+    text-align: left;
+}
+#para4{
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellowgreen;
+}
+h2{
+    color: red;
+}
+p{
+    color: purple;
+    font-size: 30px;
+}
+#bol{
+    font-weight: bold;
+    
+}
+
+#ita{
+    font-style: italic;
+}
+
+#und,span{
+    text-decoration: underline;
+}
