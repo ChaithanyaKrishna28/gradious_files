@@ -1,0 +1,50 @@
+
+body{
+    background-color: #89eabf;
+    margin: 25px;
+
+}
+
+.container{
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.images{
+    width: 30%;
+    height: auto;
+    margin: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.images img{
+    width: 90%;
+    height: auto;
+}
+
+@media(max-width: 1279px){
+    .images{
+        width: 40%;
+    }
+    body{
+        background-color: #89D4EA;
+    }
+}
+
+@media(max-width: 810px){
+    .images{
+        width: 50%;
+    }
+    body{
+        background-color: #F3EEEE;
+    }
+}
