@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: blue;  
+    font-family: 'Comic Neue';   
+    font-weight: bold;
+}
+body{
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+body form h1{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.container{
+    border: 2px solid blue;
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+.fullnamebox{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+}
+
+.fullnamelabel{
+    /* border: 2px solid; */
+    width: 100%;
+}
+.asteriek{
+    color: red;
+}
+.fullname{
+    width: 80%;
+    height: 40px;
+    margin-top: 1%;
+    /* box-shadow: 3px 3px 3px blue; */
+    /* border: 2px solid yellow; */
+}
+
+
+
+input[type=text],input[type=email]{
+    width: 100%;
+    height: 35px;
+    border: 2px solid blue;
+    box-shadow: 3px 3px 3px blue;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 1%;
+
+}
+
+.radio1{
+    margin-bottom: 2%;
+
+}
+input[type=radio] {
+    width: 15px;
+    height: 15px; 
+}
+
+.textareabox{
+    width: 100%;
+    height: 200px;
+    padding: 2%;
+}
+
+.textareaa{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    
+}
+
+textarea{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 100%;
+    border: 2px solid blue;
+    /* border-top: 2px solid blue;
+    border-left: 2px solid blue; */
+    
+    box-shadow: 2px 2px 2px blue;
+    outline: none;
+    /* padding: 0px; */
+    font-size: 16px; 
+    line-height: 1.5; 
+    resize: none; 
+    color: #333;
+    border-radius: 5px;
+}
+
+
+select {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px blue;
+    background-color: white;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+  }
+
+  option {
+    background-color: lightblue;
+    color: navy;
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  
+  .date{
+    width: auto;
+    height: auto;
+  }
+  input[type=date]{
+    padding: 5px;
+    border: 2px solid blue;
+    outline: none;
+    box-shadow: 2px 2px 2px blue;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: black;
+  }
+  .checkbox{
+    height: 30%;
+  }
+  .checkboxes{
+    height: 100%;
+  }
+
+  input[type=checkbox]{
+    width: 20px; /* Adjust the width and height to match your design */
+    height: 20px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+  }
+
+  .box1{
+    font-size: 1.06rem;
+    margin: 1%;
+  }
+  .stars{
+    width: 20%;
+  display: flex;
+  justify-content: space-around;
+
+  }
+  .star{
+  width: 30%;
+  cursor: pointer;
+  }
+
+  .star svg{
+    width: 100%;
+    height: 100%;
+  }
+
+  .feedbackbutton{
+    height: 50px;
+    width: 30%;
+    margin: 2%;
+  }
+
+  button{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: white;
+    background: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+    transition: all 100ms ease-in-out;
+  }
+
+  button:hover{
+    transform: scale(1.1);
+    
+  }
+
+ 
+
+
