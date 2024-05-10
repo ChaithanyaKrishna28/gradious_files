@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessing Data Attributes with JavaScript</title>
+</head>
+<body>
+  <!-- Example buttons with data attributes -->
+  <button id="btn1" data-action="delete">Delete</button>
+  <button id="btn2" data-action="edit">Edit</button>
+  <button id="btn3" data-action="save">Save</button>
+
+  <script>
+    // Function to perform action based on data attribute value
+    function performAction(action) {
+      switch (action) {
+        case 'delete':
+          alert('Deleting item...');
+          break;
+        case 'edit':
+          alert('Editing item...');
+          break;
+        case 'save':
+          alert('Saving item...');
+          break;
+        default:
+          console.log('Invalid action');
+      }
+    }
+
+    // Add click event listeners to buttons
+    document.getElementById('btn1').addEventListener('click', function() {
+      performAction(this.dataset.action);
+    });
+
+    document.getElementById('btn2').addEventListener('click', function() {
+      performAction(this.dataset.action);
+    });
+
+    document.getElementById('btn3').addEventListener('click', function() {
+      performAction(this.dataset.action);
+    });
+  </script>
+</body>
+</html>

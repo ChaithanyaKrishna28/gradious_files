@@ -23,7 +23,7 @@ body form h1{
 
 .container{
     border: 2px solid blue;
-    width: 70%;
+    width: 60%;
     height: auto;
     display: flex;
     align-items: center;
