@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav>
+        <div><img src="./assets/icons8-square-clock-50.png" width="60px" height="60px"/><h1>STOP WATCH</h1></div>
+        <div>
+            <h3>Home</h3>
+            <h3>Timer</h3>
+            <h3>Clock</h3>
+            <h3>Calender</h3>
+        </div>
+    </nav>
+    <h3 id="instructions"><a href="#int">click here for instructions</a></h3>
+    <div class="container">
+        <div class="timer">
+            <div class="dis">
+                <div>
+                    <p id="days">00</p>
+                    <span class="text">Days</span>
+                </div>
+                <input id="daysIn" type="number" min="0" value="0" />
+            </div>
+            <div class="dis">
+                <div>
+                    <p id="hours">00</p>
+                    <span class="text">Hours</span>
+                </div>
+                <input id="hoursIn" type="number" min="0" max="60" value="0" pattern="/^[1-9][0-9]*$
+/" />
+            </div>
+            <div class="dis">
+                <div>
+                    <p id="mins">00</p>
+                    <span class="text">Mins</span>
+                </div>
+                <input id="minsIn" type="number" min="0" max="60" value="0" />
+            </div>
+            <div class="dis">
+                <div>
+                    <p id="secs">00</p>
+                    <span class="text">Secs</span>
+                </div>
+                <input id="secsIn" type="number" min="0" max="60" value="0" />
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="buttons" id="setTimer" onclick="setTimer()">set timer</button>
+            <button class="buttons" id="start" onclick="start()">Start / resume</button>
+            <button class="buttons" id="stop" onclick="stop()">pause</button>
+            <button class="buttons" id="reset" onclick="reset()">reset</button>
+        </div>
+    </div>
+    <footer>
+        <h2 id="int">Instructions</h2>
+        <div>1.Enter the values in the inputs.</div>
+        <div>2.Press the Set Timer Button to set the timer _</div>
+        <div>3.Press the Start/Resume Button to start the timer_</div>
+        <div>4.Pause the Timer if you want to pause_</div>
+        <div>5.Press Start/Resume Button to resume the timer.</div>
+        <div>6.Press the Reset Button to reset the values</div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1>Appointment Scheduler</h1>
+        <button id="showformbutton">Add Appointment</button>
+        <form id="appointmentform" style="display: none;">
+            <input type="hidden" id="appointmentId">
+            <label for="date">Date (YYYY-MM-DD):</label>
+            <input type="text" id="date" required>
+            <label for="time">Time (HH:MM):</label>
+            <input type="text" id="time" required>
+            <label for="clientname">Client Name :</label>
+            <input type="text" id="clientname" required>
+            <button type="submit" id="submitbutton">Submit</button>
+            
+        </form>
+        
+        <div id="appointmenttable" class="table">
+            <div class="row header">
+                <span class="cell">Appointment ID</span>
+                <span class="cell">Date</span>
+                <span class="cell">Time</span>
+                <span class="cell">Client Name</span>
+                <span class="cell">Actions</span>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <h2>Delete Confirmation</h2>
+        <p id="popupmessage"></p>
+        <button class="delete">Delete</button>
+        <button class="cancel">Cancel</button>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

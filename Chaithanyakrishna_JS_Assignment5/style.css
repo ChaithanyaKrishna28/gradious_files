@@ -1,0 +1,190 @@
+body{
+    font-family: sans-serif;
+    background-color: #333333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container{
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+#showformbutton{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #00308F;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label{
+    margin: 10px 0 5px;
+    font-size: 1.5rem;
+}
+form input{
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+form button {
+    padding: 10px;
+    cursor: pointer;
+}
+#submitbutton{
+    background-color: green;
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    height: 500px; /* Set a fixed height */
+    overflow-y: auto; /* Make the container scrollable */
+
+    /* border-radius: 5px; */
+}
+.table .row { 
+    display: flex;
+    
+    
+}
+.table .cell {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+.cell:last-child {
+    border-right: none;
+}
+.table .row:nth-child(even) {
+    background-color: #f2f2f2; /* Lavender */
+}
+
+.table .row:nth-child(odd) {
+    background-color: #cccccc; /* Azure */
+}
+.header {
+    font-weight: bold;
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust z-index as needed */
+    background-color: #fff; /* Optional: Add background color */
+}
+.header .cell{
+    border-bottom: 1px solid #ddd;
+}
+.row .cell input {
+    width: 100px; 
+    box-sizing: border-box; 
+    outline: none;
+    border: none;
+    padding: 3px 4px;
+    background-color:white;
+}
+.row .cell input:focus{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.highlight {
+    background-color: #e6ffe6; /* Light Green */
+    border: 1px solid #90ee90; 
+}
+
+.actionbuttons{
+    width: 100%;
+
+    display: flex;
+
+}
+.actions{
+    width: 100%;
+    display: flex;
+}
+.edit-button,.delete-button{
+    width: 50%;
+    outline: none;
+    background-color: #00CCCC;
+    color: white;
+    cursor: pointer;
+    padding: 5px 11px;
+}
+.save-button,.cancel-button{
+    width: 50%;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+}
+.delete-button{
+    background-color: red;
+}
+
+.save-button{
+    background-color:  #1E90FF;
+}
+.cancel-button{
+    background-color:  #555555;
+}
+
+
+/* popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+ .popup button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+ .popup button.delete {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+
+ .popup button.cancel {
+    background-color: #cccccc;
+    color: #000000;
+  }

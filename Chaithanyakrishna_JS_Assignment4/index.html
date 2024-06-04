@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="loaddata()">
+    <h1>JSON-Assignment</h1>
+    <p>Rendering the data from the LocalStorage</p>
+    <div class="buttonbox">
+        <button onclick="clearLocalStorage()" id="clear">Clear LocalStorage</button>
+    </div>
+    
+    <div class="table" id="usertable">
+        <div class="row header">
+            <span class="cell">Name</span>
+            <span class="cell">Occupation</span>
+            <span class="cell">Contact</span>
+            <span class="cell">Education</span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

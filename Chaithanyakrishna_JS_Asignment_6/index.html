@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;900&display=swap" rel="stylesheet" />
+    <title>Buddy list</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <p>Buddy List</p>
+        </div>
+        <div class="links">
+            <button  onclick="visibleUserForm()" id="adduserbutton"><i class="bi bi-person-plus-fill"></i></button>
+        </div>
+    </nav>
+    <div class="container-1">
+        <div id='root' class="users-container">
+			<!-- <div class="user">
+				<div class="img-container">
+					<img src="https://cg0.cgsociety.org/uploads/images/original/hosseindiba-jon-snow-1-b968195d-au6q.jpeg" class='user-image one' alt="user image" />
+				</div>
+				<div class="user-detail">
+				<p class="user-name">Abhi</p>
+				<p class="user-message">Hi There!</p>
+				</div>
+				<div class='three-btn'>
+					<div class="dropdown">
+						<a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+						<ul class="dropdown-menu">
+							<li><button id='USR0001' onclick='deleteItem("USR0001")'class="dropdown-item ">Delete</button></li>
+							<li><button  id='update-USR0001' onclick='updateItem("USR0001")'class="dropdown-item ">Update</button></li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+
+
+			<!-- <div class="user">
+				<div class="img-container">
+					<img src="https://cg0.cgsociety.org/uploads/images/original/hosseindiba-jon-snow-1-b968195d-au6q.jpeg" class='user-image one' alt="user image" />
+				</div>
+				<div class="user-detail">
+				<p class="user-name">Abhi</p>
+				<p class="user-message">Hi There!</p>
+				</div>
+				<div class='three-btn'>
+					<div class="dropdown">
+						<a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+						<ul class="dropdown-menu">
+						<li><button id='USR0001' onclick='deleteItem("USR0001")'class="dropdown-item ">Delete</button></li>
+						<li><button  id='update-USR0001' onclick='updateItem("USR0001")'class="dropdown-item ">Update</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="user">
+				<div class="img-container">
+					<img src="https://cg0.cgsociety.org/uploads/images/original/hosseindiba-jon-snow-1-b968195d-au6q.jpeg" class='user-image one' alt="user image" />
+				</div>
+				<div class="user-detail">
+				<p class="user-name">Abhi</p>
+				<p class="user-message">Hi There!</p>
+				</div>
+				<div class='three-btn'>
+					<div class="dropdown">
+						<a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></a>
+						<ul class="dropdown-menu">
+						<li><button id='USR0001' onclick='deleteItem("USR0001")'class="dropdown-item ">Delete</button></li>
+						<li><button  id='update-USR0001' onclick='updateItem("USR0001")'class="dropdown-item ">Update</button></li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+
+        </div>
+		<div class="messagebox" id="messagebox">
+			<div class="boxes">
+				<div class="box1 box top">
+					<div class="logo-title">
+						<p>Connect</p>
+					</div>
+					<div class="messenger-logo">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M256.6 8C116.5 8 8 110.3 8 248.6c0 72.3 29.7 134.8 78.1 177.9 8.4 7.5 6.6 11.9 8.1 58.2A19.9 19.9 0 0 0 122 502.3c52.9-23.3 53.6-25.1 62.6-22.7C337.9 521.8 504 423.7 504 248.6 504 110.3 396.6 8 256.6 8zm149.2 185.1l-73 115.6a37.4 37.4 0 0 1 -53.9 9.9l-58.1-43.5a15 15 0 0 0 -18 0l-78.4 59.4c-10.5 7.9-24.2-4.6-17.1-15.7l73-115.6a37.4 37.4 0 0 1 53.9-9.9l58.1 43.5a15 15 0 0 0 18 0l78.4-59.4c10.4-8 24.1 4.5 17.1 15.6z"/></svg>
+					</div>
+				</div>
+				<div class="box2 box">Hi Abdul</div>
+				<div class="box3 box">Hlo Abdul</div>
+				<div class="box4 box">How are you!</div>
+				<div class="box5 box">What about you?</div>
+				<div class="box6 box bottom">
+					<div class="message-input">
+						<input type="text" placeholder="Enter your message">
+					</div>
+					<div class="attachment-logo">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/></svg>
+					</div>
+					<div class="send-logo">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/></svg>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+        <form id="addUserForm">
+            <div class='form'>
+                <div class="input">
+                    <input type="text" name="" id="name" placeholder="Name">
+                </div>
+                <div class="input">
+                    <input type="text" name="" id="statusMessage" placeholder="Status Message">
+                </div>
+                <div class="input">
+                    <input type="text" name="" id="profilePicLink" placeholder="Profile Picture Link">
+                </div>
+                <div class="input">
+                    <select name="" id="presence">
+                        <option value="1">Availble</option>
+                        <option value="2">Busy</option>
+                        <option value="3">idle</option>
+                        <option value="4">Not loggedin</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="btn" id="submitBtn" >Add User</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</html>
